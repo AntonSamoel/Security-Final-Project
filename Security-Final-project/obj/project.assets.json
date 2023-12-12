@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Deel\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\IDEs\\Visual Studio 2022\\Security-Final-project\\Security-Final-Project\\Security-Final-project\\Security-Final-project.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\SecurityFinal\\Security-Final-Project\\Security-Final-project\\Security-Final-project.csproj",
       "projectName": "Security-Final-project",
-      "projectPath": "D:\\Programming\\IDEs\\Visual Studio 2022\\Security-Final-project\\Security-Final-Project\\Security-Final-project\\Security-Final-project.csproj",
-      "packagesPath": "C:\\Users\\Deel\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\IDEs\\Visual Studio 2022\\Security-Final-project\\Security-Final-Project\\Security-Final-project\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\SecurityFinal\\Security-Final-Project\\Security-Final-project\\Security-Final-project.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\SecurityFinal\\Security-Final-Project\\Security-Final-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Deel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
