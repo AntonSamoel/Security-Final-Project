@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			groupBox1 = new GroupBox();
 			signOption = new RadioButton();
 			rsaOption = new RadioButton();
@@ -49,16 +50,17 @@
 			groupBox1.TabIndex = 1;
 			groupBox1.TabStop = false;
 			groupBox1.Text = "Choose one of the three options:";
+			groupBox1.Enter += groupBox1_Enter;
 			// 
 			// signOption
 			// 
 			signOption.AutoSize = true;
 			signOption.Location = new Point(24, 279);
 			signOption.Name = "signOption";
-			signOption.Size = new Size(324, 50);
+			signOption.Size = new Size(646, 50);
 			signOption.TabIndex = 3;
 			signOption.TabStop = true;
-			signOption.Text = "Encrypt And Sign";
+			signOption.Text = "Sign and Encrypt - Decrypt and Verify";
 			signOption.UseVisualStyleBackColor = true;
 			signOption.CheckedChanged += signOption_CheckedChanged;
 			// 
@@ -67,10 +69,10 @@
 			rsaOption.AutoSize = true;
 			rsaOption.Location = new Point(24, 181);
 			rsaOption.Name = "rsaOption";
-			rsaOption.Size = new Size(119, 50);
+			rsaOption.Size = new Size(481, 50);
 			rsaOption.TabIndex = 2;
 			rsaOption.TabStop = true;
-			rsaOption.Text = "RSA";
+			rsaOption.Text = "Sign and Verify Using RSA";
 			rsaOption.UseVisualStyleBackColor = true;
 			rsaOption.CheckedChanged += rsaOption_CheckedChanged;
 			// 
@@ -103,6 +105,7 @@
 			ClientSize = new Size(1277, 654);
 			Controls.Add(groupBox1);
 			Font = new Font("Times New Roman", 18F);
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(6, 5, 6, 5);
 			Name = "MainForm";
 			Text = "Security";
