@@ -7,7 +7,7 @@ namespace Security_Final_project
 {
 	public class EncryptAndDecrypt
 	{
-		private const string key = "1234567891234567";
+		public static string key = "1234567891234567";
 		public static string EncryptData(string inputData)
 		{
 			try
@@ -35,7 +35,7 @@ namespace Security_Final_project
 			}
 			catch (Exception ex)
 			{
-				return $"Encryption failed: {ex.Message}";
+				return $"Encryption failed: {ex.Message}\nKey Size must be 16 Characters";
 			}
 		}
 

@@ -23,7 +23,7 @@ namespace Security_Final_project
 
             return output;
         }
-        public bool DecryptAndVerify(string data)
+        public bool IsDecryptedAndVerified(string data)
         {
             string output = data;
 
@@ -32,6 +32,16 @@ namespace Security_Final_project
             string[] split = output.Split("\nSIGNATURE\n");
 
             return rsaVerifyService.VerifySignature(split[0], split[1]);
+        }
+        public string[] DecryptAndVerify(string data)
+        {
+            string output = data;
+
+            output = EncryptAndDecrypt.DecryptData(output);
+
+            string[] split = output.Split("\nSIGNATURE\n");
+
+            return split;
         }
     }
 }

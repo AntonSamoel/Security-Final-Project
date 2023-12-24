@@ -7,8 +7,8 @@ namespace Security_Final_project
     public class RSASignVerifyService
     {
         private static RSACryptoServiceProvider csp = new(2048);
-        private RSAParameters _privateKey;
-        private RSAParameters _publicKey;
+        public RSAParameters _privateKey;
+        public RSAParameters _publicKey;
 
         public RSASignVerifyService()
         {
@@ -27,6 +27,7 @@ namespace Security_Final_project
         public string SignData(string data)
         {
             using var rsa = new RSACryptoServiceProvider();
+           
             rsa.ImportParameters(_privateKey);
             var dataToSign = Encoding.UTF8.GetBytes(data);
             var signature = rsa.SignData(dataToSign, HashAlgorithmName.SHA512, RSASignaturePadding.Pkcs1);
@@ -40,5 +41,7 @@ namespace Security_Final_project
             var signatureData = Convert.FromBase64String(signature);
             return rsa.VerifyData(dataToVerify, signatureData, HashAlgorithmName.SHA512, RSASignaturePadding.Pkcs1);
         }
+
     }
+
 }
